@@ -1,0 +1,71 @@
+#brand{
+    .brand_colour{
+        background: #F8F6FE;
+        .west_text{
+            h4{
+                @include fonts('Inter',500,25px,$hover_color);
+                line-height: 120%;
+                @include mgap(85px,15px,0px,0px)
+            }
+            h2{
+                @include fonts('Inter',600,35px,$headingcolor);
+                line-height: 37px;
+                @include mgap(0px,85px,0px,0px)
+            }
+        }
+        .west_wraper{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            .customer{
+                h2{
+                    @include fonts('Inter',700,50px,$headingcolor);
+                    @include mgap(85px,20px,0px,0px)
+                }
+                p{
+                    @include fonts('Inter',500,20px,$para_color);
+                    @include mgap(0px,20px,0px,0px)
+                }
+                .cust_img{
+                    a img{
+                        margin-left: -15px;
+                    }
+                    &:first-child{
+                        margin-left: 0;
+                    }
+                }
+            }
+            .AVG{
+                h2{
+                    @include fonts('Inter',700,50px,$headingcolor);
+                    @include mgap(85px,20px,0px,0px)
+                }
+                p{
+                    @include fonts('Inter',500,20px,$para_color);
+                    @include mgap(0px,20px,0px,0px)
+                }
+                .icon{
+                   i{
+                        color: #FFAC4A;
+                   }
+                }
+            }
+            .project{
+                h2{
+                    @include fonts('Inter',700,50px,$headingcolor);
+                    @include mgap(85px,20px,0px,0px)
+                }
+                p{
+                    @include fonts('Inter',500,20px,$para_color);
+                    @include mgap(0px,20px,0px,0px)
+                }
+               h4{
+                @include fonts('Inter',500,20px,$hover_color);
+                line-height: 120%;
+                @include fonts('Inter',500,20px,$hover_color);
+               }
+            }
+        }
+    }
+}

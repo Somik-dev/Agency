@@ -1,0 +1,19 @@
+#work{
+    @include pgap(150px,184px,140px,140px);
+    background-color: $secondary;
+    .work_item{
+        background-color: #ffff;
+        border-radius: 20px;
+        .work_content{
+            h3{
+                @include fonts('Inter',700,20px,$headingcolor);
+                @include mgap(30px,10px,0px,0px);
+            }
+            p{
+                @include fonts('Inter',400,16px,$para_color);
+                line-height: 26px;
+                @include pgap(0px,30px,42px,42px);
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+#service{
+    @include pgap(80px,80px,0px,0px);
+
+
+
+    .service_item{
+        @include pgap(47px,47px,49px,49px);
+        border-radius: 20px;
+        .serv-content{
+            @include mgap(40px,0px,0px,0px);
+            h3{
+                @include fonts('Inter',700,25px,$headingcolor);
+                margin-bottom: 20px;
+            }
+            p{
+                @include fonts('Inter',400,16px,$para_color);
+                line-height: 26px;
+            }
+        }
+        transition: all linear 0.3s;
+        &:hover{
+            box-shadow: 0px 6px 35px 0px #0000000F;
+        }
+    }
+}

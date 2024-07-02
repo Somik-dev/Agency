@@ -1,0 +1,83 @@
+#banner{
+    @include pgap(233px,150px,0px,0px);
+    .banner-content{
+        h1{
+            @include fonts('Inter',700,67px,$headingcolor);
+            line-height: 120%;
+            @include mgap(0px,20px,0px,0px)
+        }
+        p{
+            @include fonts('Inter',400,16px,$para_color);
+            line-height: 26px;
+            @include mgap(0px,30px,0px,-4px);
+        }
+        button{
+            background-color: $primary_bg;
+            @include pgap(15px,15px,42px,42px);
+            @include fonts('Inter',400,18px,#fff);
+            border: none;
+            border-radius: 10px;
+        }
+    }
+    .left-img-wraper{
+        position: relative;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .left-orange{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 122px;
+            height: 122px;
+            background-color: #FFC44A;
+        }
+        .left-img img{
+            border-top-left-radius:100px;
+            position: absolute;
+            top: 139px;
+            left: 5px;
+        }
+        .left-purple{
+            position: absolute;
+            top: 403px;
+            left: 53px;
+            width: 205px;
+            height: 205px;
+            background-color: $hover_color; 
+            border-bottom-left-radius: 100px;
+        }
+    }
+    .right-img-wraper{
+        margin-top: -83px;
+        align-items: center;
+        flex-wrap: wrap;
+        .right_part_1{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            position: relative;
+            margin-bottom: 25px;
+            .right_img1 img{
+                width: 229px;
+                height: 229px;
+                border-top-right-radius: 100px;
+            }
+            .right_blue{
+                position: absolute;
+                top: 127px;
+                right: -15px;
+                width: 102px;
+                height: 102px;
+                border-bottom-right-radius: 100px;
+                background-color: #4A92FF;
+            }
+        }
+        .right_part_2 img{
+        width: 373px;
+        height: 373px;
+        border-radius: 30px;
+        object-fit: cover;
+        }
+    }
+}
